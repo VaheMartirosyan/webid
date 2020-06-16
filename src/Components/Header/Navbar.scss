@@ -1,0 +1,195 @@
+//@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav_all{
+  //padding: 50px;
+  background: #1f1f1f;
+  //position: fixed;
+}
+.aside-section {
+  font-family: 'Lexend Tera', sans-serif;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1998;
+}
+
+.aside-left {
+  width: 100%;
+  left: 0;
+  background-color: black;
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
+  transform: translateY(-200%);
+  transition: transform 0.6s ease-in-out;
+}
+
+.aside-right {
+  display: none;
+  width: 40%;
+  right: 0;
+  background-color: #1f1f1f;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  transition: transform 0.6s ease-in-out;
+}
+
+.aside-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  li{
+    margin: 40px 0;
+
+  }
+}
+
+.aside-content {
+  margin-top: 150px;
+  padding: 0 40px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+
+
+.aside-anchor::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #EA0026;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.aside-anchor::before {
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  left: 0;
+  height: 3px;
+  z-index: 1;
+  width: 50%;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.aside-anchor:hover:before {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.aside-anchor {
+  padding-bottom: 7px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 55px;
+  position: relative;
+  font-weight: bolder;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ aside .aside-left {
+  transform: translateY(0%);
+}
+
+input[type="checkbox"]:checked ~ aside .aside-right {
+  transform: translateX(0%);
+}
+
+input[type="checkbox"]:checked ~ label .bar {
+  background-color: #EA0026;
+}
+
+input[type="checkbox"]:checked ~ label .top {
+  -webkit-transform: translateY(0px) rotateZ(45deg);
+  -moz-transform: translateY(0px) rotateZ(45deg);
+  -ms-transform: translateY(0px) rotateZ(45deg);
+  -o-transform: translateY(0px) rotateZ(45deg);
+  transform: translateY(0px) rotateZ(45deg);
+}
+
+input[type="checkbox"]:checked ~ label .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+input[type="checkbox"]:checked ~ label .middle {
+  width: 0;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+label {
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 1999;
+  position: fixed;
+}
+
+.bar {
+  display: block;
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 5px auto;
+  transition: background-color 0.4s ease-in, transform 0.4s ease-in,
+  width 0.4s ease-in;
+}
+@media (min-width: 992px) {
+
+  .aside-left {
+    width: 60%;
+
+  }
+
+  .aside-right {
+    display: block;
+  }
+}
+.logo{
+  width: 100px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  img{
+    width: 100%;
+  }
+}

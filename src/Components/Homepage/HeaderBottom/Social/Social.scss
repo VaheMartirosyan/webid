@@ -1,0 +1,88 @@
+.header_social{
+  position: absolute;
+  transform: rotate(90deg);
+  top:50%;
+  right: -7.5%;
+  display: flex;
+  width: 20%;
+  p{
+    font-size: 12px;
+    width: 55%;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .line{
+    width: 200px;
+    height: 1px;
+    margin: 7px 8px 7px 2px;
+    background: white;
+  }
+  .social_btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+
+    font-size: 15px;
+    i{
+      transform: rotate(0deg);
+      transition: .5s;
+      cursor: pointer;
+      &:hover{
+        transition: .5s;
+        transform: rotate(-90deg);
+        color: #EA0026;
+      }
+    }
+  }
+}
+@media (max-width: 1700px){
+  .header_social{
+    right: -7.5%;
+    width: 21%;
+  }
+}
+@media (max-width: 1630px){
+  .header_social{
+    width: 22%;
+    right: -8%;
+  }
+}
+@media (max-width: 1500px){
+  .header_social{
+    width: 23%;
+    right: -8%;
+  }
+}
+@media (max-width: 1420px){
+  .header_social{
+    width: 25%;
+    right: -9%;
+  }
+}
+@media (max-width: 1320px){
+  .header_social{
+    width: 27%;
+    right: -10%;
+  }
+}
+@media (max-width: 1220px){
+  .header_social{
+    width: 29%;
+    right: -10%;
+  }
+}
+@media (max-width: 1120px){
+  .header_social{
+    width: 31%;
+    right: -11%;
+
+  }
+}
+@media (max-width: 1055px){
+  .header_social{
+    width: 35%;
+  right: -12.2%;
+  }
+}
