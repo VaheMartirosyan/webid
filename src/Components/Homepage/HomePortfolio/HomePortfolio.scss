@@ -1,6 +1,6 @@
 .portfolio_filter{
  position: absolute;
-  transform: rotate(-90deg) translate(-420px,-30px);
+  transform: rotate(-90deg) translate(-420px,-200px);
   top:0;
   ul{
     list-style: none;
@@ -15,193 +15,220 @@
 }
 .bod1{
   border-radius: 10px;
-  width: 310px;
-  height: 342px;
+  width: 500px;
+  height: 542px;
   background: mediumpurple;
   text-align: center;
   transition: 1s;
+  background: url("./Img/jeep.png") no-repeat ;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod2{
   border-radius: 10px;
-  width: 310px;
-  height: 317px;
+  width: 500px;
+  height: 517px;
   background: hotpink;
   text-align: center;
+  background: url("./Img/naski.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod3{
   border-radius: 10px;
-  width: 310px;
-  height: 342px;
+  width: 500px;
+  height: 542px;
   background: rebeccapurple;
   text-align: center;
+  background: url("./Img/Marko.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod4{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: red;
   text-align: center;
+  background: url("./Img/goldcrest.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: left;
 }
 .bod5{
   border-radius: 10px;
-  width: 310px;
-  height: 317px;
+  width: 500px;
+  height: 517px;
   background: purple;
   text-align: center;
+  background: url("./Img/R2E2.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: left;
 }
 .bod6{
   border-radius: 10px;
-  width: 310px;
-  height: 307px;
+  width: 500px;
+  height: 507px;
   background: pink;
   text-align: center;
+  background: url("./Img/allHotels.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod7{
   border-radius: 10px;
-  width: 310px;
-  height: 307px;
+  width: 500px;
+  height: 507px;
   background: yellowgreen;
   text-align: center;
+  background: url("./Img/Fiat.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod8{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: deeppink;
   text-align: center;
+  background: url("./Img/AlfaR.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: left;
 }
 .bod9{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: rebeccapurple;
   text-align: center;
+  background: url("./Img/Datanet.png") 100% 100% ;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod10{
   border-radius: 10px;
-  width: 310px;
-  height: 342px;
+  width: 500px;
+  height: 542px;
   background: mediumpurple;
   text-align: center;
   transition: 1s;
 }
 .bod11{
   border-radius: 10px;
-  width: 310px;
-  height: 317px;
+  width: 500px;
+  height: 517px;
   background: hotpink;
   text-align: center;
 }
 .bod12{
   border-radius: 10px;
-  width: 310px;
-  height: 342px;
+  width: 500px;
+  height: 542px;
   background: rebeccapurple;
   text-align: center;
 }
 .bod13{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: red;
   text-align: center;
 }
 .bod14{
   border-radius: 10px;
-  width: 310px;
-  height: 317px;
+  width: 500px;
+  height: 517px;
   background: purple;
   text-align: center;
 }
 .bod15{
   border-radius: 10px;
-  width: 310px;
-  height: 307px;
+  width: 500px;
+  height: 507px;
   background: pink;
   text-align: center;
 }
 .bod16{
   border-radius: 10px;
-  width: 310px;
-  height: 307px;
+  width: 500px;
+  height: 507px;
   background: yellowgreen;
   text-align: center;
 }
 .bod17{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: deeppink;
   text-align: center;
 }
 .bod18{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: rebeccapurple;
   text-align: center;
 }
 .bod19{
   border-radius: 10px;
-  width: 310px;
-  height: 342px;
+  width: 500px;
+  height: 542px;
   background: mediumpurple;
   text-align: center;
   transition: 1s;
 }
 .bod20{
   border-radius: 10px;
-  width: 310px;
-  height: 317px;
+  width: 500px;
+  height: 517px;
   background: hotpink;
   text-align: center;
 }
 .bod21{
   border-radius: 10px;
-  width: 310px;
-  height: 342px;
+  width: 500px;
+  height: 542px;
   background: rebeccapurple;
   text-align: center;
 }
 .bod22{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: red;
   text-align: center;
 }
 .bod23{
   border-radius: 10px;
-  width: 310px;
-  height: 317px;
+  width: 500px;
+  height: 517px;
   background: purple;
   text-align: center;
 }
 .bod24{
   border-radius: 10px;
-  width: 310px;
-  height: 307px;
+  width: 500px;
+  height: 507px;
   background: pink;
   text-align: center;
 }
 .bod25{
   border-radius: 10px;
-  width: 310px;
-  height: 307px;
+  width: 500px;
+  height: 507px;
   background: yellowgreen;
   text-align: center;
 }
 .bod26{
   border-radius: 10px;
-  width: 310px;
-  height: 222px;
+  width: 500px;
+  height: 300px;
   background: deeppink;
   text-align: center;
 }
 .bod27{
   border-radius: 10px;
-  width: 310px;
-  height: 342px;
+  width: 500px;
+  height: 542px;
   background: mediumpurple;
   text-align: center;
   transition: 1s;
@@ -214,14 +241,15 @@
 .portfolio{
 
   margin-top: 15vh;
-  height: 990px;
+  height: 1630px;
   position: relative;
   overflow: hidden;
   transition: 1s;
   .load_more{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 870px;
+    transition: 1s;
   }
   .all1{
     transform: translate(0px,0) scale(1);
@@ -246,14 +274,11 @@
     transform: translate(20px,-10px);
   }
   .all6{
-
-    //top: 362px;
-    //left: 660px;
     transform: translate(40px,10px);
     transition: 1s;
   }
   .all7{
-    transform: translate(0px,-70px);
+    transform: translate(0px,-190px);
     transition: 1s;
   }
   .all8{
@@ -338,7 +363,7 @@
   }
 }
 .portfolio_more{
-  transition: 1s;
+
   position: relative;
   background: #1f1f1f;
   height: 100%;
@@ -348,7 +373,8 @@
   .load_more{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 870px;
+    transition: 1s;
   }
   .all1{
     transform: translate(0px,0) scale(1);
@@ -380,7 +406,7 @@
     transition: 1s;
   }
   .all7{
-    transform: translate(0px,-70px);
+    transform: translate(0px,-190px);
     transition: 1s;
   }
   .all8{
@@ -392,75 +418,75 @@
     transition: 1s;
   }
   .all10{
-    transform: translate(0px,-55px) scale(1);
+    transform: translate(0px,-170px) scale(1);
     transition: 1s;
   }
   .all11{
-    transform: translate(20px,-70px);
+    transform: translate(20px,-190px);
     transition: 1s;
   }
   .all12{
-    transform: translate(40px,-60px);
+    transform: translate(40px,-180px);
     transition: 1s;
   }
   .all13{
-    transform: translate(0px,-40px);
+    transform: translate(0px,-150px);
     transition: 1s;
   }
   .all14{
-    transform: translate(20px,-80px);
+    transform: translate(20px,-190px);
     transition: 1s;
   }
   .all15{
     transition: 1s;
-    transform: translate(40px,-45px);
+    transform: translate(40px,-155px);
   }
   .all16{
-    transform: translate(0px,-120px);
+    transform: translate(0px,-350px);
     transition: 1s;
   }
   .all17{
-    transform: translate(20px,-65px);
+    transform: translate(20px,-175px);
     transition: 1s;
   }
   .all18{
-    transform: translate(40px,-40px);
+    transform: translate(40px,-150px);
     transition: 1s;
   }
   .all19{
-    transform: translate(0px,-100px);
+    transform: translate(0px,-330px);
     transition: 1s;
   }
   .all20{
-    transform: translate(20px,-130px) scale(1);
+    transform: translate(20px,-360px) scale(1);
     transition: 1s;
   }
   .all21{
-    transform: translate(40px,-105px);
+    transform: translate(40px,-340px);
     transition: 1s;
   }
   .all22{
-    transform: translate(0px,-80px);
+    transform: translate(0px,-310px);
     transition: 1s;
   }
   .all23{
-    transform: translate(20px,-135px);
+    transform: translate(20px,-365px);
     transition: 1s;
   }
   .all24{
     transition: 1s;
-    transform: translate(40px,-85px);
+    transform: translate(40px,-320px);
   }
   .all25{
-    transform: translate(0px,-155px);
+    transform: translate(0px,-505px);
     transition: 1s;
   }
   .all26{
-    transform: translate(20px,-115px);
+    transform: translate(20px,-345px);
     transition: 1s;
   }
   .all27{
-    transform: translate(40px,-75px);
+    transform: translate(40px,-310px);
     transition: 1s;
   }
 }
@@ -509,7 +535,7 @@
   transition: 1s;
 }
 .nongov12{
-  transform:translate(-636px,-966px) scale(1);
+  transform:translate(-889px,-1566px) scale(1);
   transition: 1s;
 }
 .nongov13{
@@ -577,7 +603,7 @@
   transition: 1s;
 }
 .tech2{
-  transform:translate(0) scale(0);
+  transform:translate(20px,0px) scale(0);
   transition: 1s;
 }
 .tech3{
@@ -629,7 +655,7 @@
   transition: 1s;
 }
 .tech15{
-  transform:translate(-297px,-1308px) scale(1);
+  transform:translate(-424px,-2108px) scale(1);
   transition: 1s;
 }
 .tech16{
@@ -641,7 +667,7 @@
   transition: 1s;
 }
 .tech18{
-  transform:translate(-635px,-1625px) scale(1);
+  transform:translate(-889px,-2625px) scale(1);
   transition: 1s;
 }
 .tech19{
@@ -709,7 +735,7 @@
   transition: 1s;
 }
 .tel9{
-  transform:translate(-635px,-659px) scale(1);
+  transform:translate(-889px,-1059px) scale(1);
   transition: 1s;
 }
 .tel10{
@@ -729,7 +755,7 @@
   transition: 1s;
 }
 .tel14{
-  transform:translate(20px,-1308px) scale(1);
+  transform:translate(20px,-2108px) scale(1);
   transition: 1s;
 }
 .tel15{
@@ -873,11 +899,11 @@
   transition: 1s;
 }
 .educate24{
-  transform:translate(-298px,-2274px) scale(1);
+  transform:translate(-425px,-3674px) scale(1);
   transition: 1s;
 }
 .educate25{
-  transform:translate(0,-2591px) scale(1);
+  transform:translate(0,-4191px) scale(1);
   transition: 1s;
 }
 .educate26{
@@ -909,7 +935,7 @@
   transition: 1s;
 }
 .auto7{
-  transform:translate(675px,-659px) scale(1);
+  transform:translate(929px,-1059px) scale(1);
   transition: 1s;
 }
 .auto8{
@@ -921,7 +947,7 @@
   transition: 1s;
 }
 .auto10{
-  transform:translate(0,-605px) scale(1);
+  transform:translate(0,-1005px) scale(1);
   transition: 1s;
 }
 .auto11{
@@ -933,7 +959,7 @@
   transition: 1s;
 }
 .auto13{
-  transform:translate(338px,-973px) scale(1);
+  transform:translate(468px,-1573px) scale(1);
   transition: 1s;
 }
 .auto14{
@@ -961,7 +987,7 @@
   transition: 1s;
 }
 .auto20{
-  transform:translate(0) scale(0);
+  transform:translate(485px,-2605px) scale(1);
   transition: 1s;
 }
 .auto21{
@@ -1001,7 +1027,7 @@
   transition: 1s;
 }
 .art4{
-  transform:translate(0,-342px) scale(1);
+  transform:translate(0,-542px) scale(1);
   transition: 1s;
 }
 .art5{
@@ -1149,7 +1175,7 @@
   transition: 1s;
 }
 .industrial15{
-  transform:translate(-635px,-1308px) scale(1);
+  transform:translate(-889px,-2108px) scale(1);
   transition: 1s;
 }
 .industrial16{
@@ -1207,7 +1233,7 @@
   transition: 1s;
 }
 .ecom3{
-  transform:translate(-635px,0) scale(1);
+  transform:translate(-889px,0) scale(1);
   transition: 1s;
 }
 .ecom4{
@@ -1215,7 +1241,7 @@
   transition: 1s;
 }
 .ecom5{
-  transform:translate(20px,-342px) scale(1);
+  transform:translate(20px,-542px) scale(1);
   transition: 1s;
 }
 .ecom6{
@@ -1227,7 +1253,7 @@
   transition: 1s;
 }
 .ecom8{
-  transform:translate(357px,-659px) scale(1);
+  transform:translate(485px,-1058px) scale(1);
   transition: 1s;
 }
 .ecom9{
@@ -1263,7 +1289,7 @@
   transition: 1s;
 }
 .ecom17{
-  transform:translate(-317px,-1262px) scale(1);
+  transform:translate(485px,-2309px) scale(1);
   transition: 1s;
 }
 .ecom18{
@@ -1271,7 +1297,7 @@
   transition: 1s;
 }
 .ecom19{
-  transform:translate(337px,-1593px) scale(1);
+  transform:translate(0px,-2575px) scale(1);
   transition: 1s;
 }
 .ecom20{
@@ -1279,7 +1305,7 @@
   transition: 1s;
 }
 .ecom21{
-  transform:translate(40px,-1690px) scale(1);
+  transform:translate(-425px,-2600px) scale(1);
 
   transition: 1s;
 }
@@ -1304,7 +1330,7 @@
   transition: 1s;
 }
 .ecom27{
-  transform:translate(-635px,-1984px) scale(1);
+  transform:translate(40px,-3560px) scale(1);
   transition: 1s;
 }
 
@@ -1371,7 +1397,7 @@
   transform: translate(20px,-10px) scale(0);
 }
 .news16{
-  transform: translate(0px,-1625px) scale(1);
+  transform: translate(0px,-2625px) scale(1);
   transition: 1s;
 }
 .news17{
@@ -1533,155 +1559,67 @@
   transition: 1s;
 }
 
+/**#btn:after{
+			width: 100%;
+			height: 100%;
+			content: '';
+			margin: auto;
+			position: absolute;
+			top:  100%;
+			left: 100%;
+			background: #212121;
+			transition: all .5s;
+			z-index: -1;
 
+	}**/
+/**
+	#btn:hover:after{
+			transform: rotateY(90deg);
 
-//
-//
-//
-///*
-//  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
-//  box-shadow: [inset?] [top] [left] [blur] [size] [color];
-//
-//  Tips:
-//    - We're setting all the blurs to 0 since we want a solid fill.
-//    - Add the inset keyword so the box-shadow is on the inside of the element
-//    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
-//    - Multiple shadows can be stacked
-//    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
-//*/
-//
-//// Animate the size, inside
-//.fill:hover,
-//.fill:focus {
-//  box-shadow: inset 0 0 0 2em var(--hover);
-//}
-//
-//// Animate the size, outside
-//.pulse:hover,
-//.pulse:focus {
-//  animation: pulse 1s;
-//  box-shadow: 0 0 0 2em rgba(#fff,0);
-//}
-//
-//@keyframes pulse {
-//  0% { box-shadow: 0 0 0 0 var(--hover); }
-//}
-//
-//// Stack multiple shadows, one from the left, the other from the right
-//.close:hover,
-//.close:focus {
-//  box-shadow:
-//          inset -3.5em 0 0 0 var(--hover),
-//          inset 3.5em 0 0 0 var(--hover);
-//}
-//
-//// Size can also be negative; see how it's smaller than the element
-//.raise:hover,
-//.raise:focus {
-//  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-//  transform: translateY(-0.25em);
-//}
-//
-//// Animating from the bottom
-//.up:hover,
-//.up:focus {
-//  box-shadow: inset 0 -3.25em 0 0 var(--hover);
-//}
-//
-//// And from the left
-//.slide:hover,
-//.slide:focus {
-//  box-shadow: inset 6.56em 0 0 0 var(--hover);
-//}
-//
-//// Multiple shadows, one on the outside, another on the inside
-//.offset {
-//  box-shadow:
-//          0.3em 0.3em 0 0 var(--color),
-//          inset 0.3em 0.3em 0 0 var(--color);
-//
-//  &:hover,
-//  &:focus {
-//    box-shadow:
-//            0 0 0 0 var(--hover),
-//            inset 6em 3.5em 0 0 var(--hover);
-//  }
-//}
-//
-////=== Set button colors
-//// If you wonder why use Sass vars or CSS custom properties...
-//// Make a map with the class names and matching colors
-//$colors: (
-//        fill: #a972cb,
-//        pulse: #ef6eae,
-//        close: #ff7f82,
-//        raise: #ffa260,
-//        up: #e4cb58,
-//        slide: #8fc866,
-//        offset: #19bc8b
-//);
-//
-//// Sass variables compile to a static string; CSS variables are dynamic and inherited
-//// Loop through the map and set CSS custom properties using Sass variables
-//@each $button, $color in $colors {
-//  .#{$button} {
-//    --color: #{$color};
-//    --hover: #{adjust-hue($color, 45deg)};
-//  }
-//}
-//
-//// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
-//button {
-//  color: var(--color);
-//  transition: 1s;
-//  border-radius:20px;
-//  &:hover,
-//  &:focus {
-//    border-color: var(--hover);
-//    color: #fff;
-//  }
-//}
-//
-////=== Pen styling, ignore
-//body {
-//  color: #fff;
-//  background: hsl(227, 10%, 10%);
-//  font: 300 1em 'Fira Sans', sans-serif;
-//
-//  // Center everything ever
-//  justify-content: center;
-//  align-content: center;
-//  align-items: center;
-//  text-align: center;
-//  min-height: 100vh;
-//  display: flex;
-//}
-//
-//// Basic button styles
-//button {
-//  background: none;
-//  border: 2px solid;
-//  font: inherit;
-//  line-height: 1;
-//  margin: 0.5em;
-//  padding: 1em 2em;
-//}
-//
-//h1 { font-weight: 400; }
-//
-//code {
-//  color: #e4cb58;
-//  font: inherit;
-//}
+	}**/
 
+.load_more{
 
-//<div class="buttons">
-//<h1>Simple hover effects with <code>box-shadow</code></h1>
-//<button class="fill">Fill In</button>
-//<button class="pulse">Pulse</button>
-//<button class="close">Close</button>
-//<button class="raise">Raise</button>
-//<button class="up">Fill Up</button>
-//<button class="slide">Slide</button>
-//<button class="offset">Offset</button>
-//</div>
+  #btn {
+    span{
+      position: relative;
+      z-index: 2;
+      color:white;
+
+    }
+    outline: none;
+    border: 2px solid #EA0026;
+    padding: 8px 40px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: all .5s;
+    border-radius: 20px;
+    &:before {
+      width: 100%;
+      height: 100%;
+      content: '';
+      margin: auto;
+      position: absolute;
+      top: 0%;
+      left: -100%;
+      background: #EA0026;
+      transition: all 1s;
+      z-index: 0;
+    }
+    &:hover {
+      color: white;
+      &:before {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+}
+.port_all{
+  padding: 0 0 150px 0;
+}

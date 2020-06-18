@@ -66,7 +66,7 @@ class HomePortfolio extends Component{
            window.scrollTo({behavior:'smooth',top:this.toTop.current.offsetTop -130})
        }
         if(!this.state.load){
-            window.scrollTo({behavior:'smooth',top:this.toTop.current.offsetTop +20000})
+            window.scrollTo({behavior:'smooth',top:this.toTop.current.offsetTop +200000})
         }
     }
     render() {
@@ -91,7 +91,7 @@ class HomePortfolio extends Component{
 
                        </ul>
                    </div>
-                   <div className={'d-flex flex-wrap '} style={{position:'relative',width:'50%',margin:'0 auto'}}>
+                   <div className={'d-flex flex-wrap '} style={{position:'relative',width:'70%',margin:'0 auto'}}>
                        {this.props.portfolio.map((e,i)=>{
                            return(
                                <div key={i} className={ `col-lg-4 bod${e.id} ${this.state.all ? `all${e.id}`: this.state.nonGov ? `nongov${e.id}` :
@@ -105,7 +105,7 @@ class HomePortfolio extends Component{
                        })}
                    </div>
                    <div className={'load_more'}>
-                       <button onClick={this.loadMore} >{!this.state.load ? 'Show All' : "No More Works "}</button>
+                       <button id={'btn'} onClick={this.loadMore} ><span>{!this.state.load ? 'Show All' : "No More Works "}</span></button>
                    </div>
                </div>
            </div>

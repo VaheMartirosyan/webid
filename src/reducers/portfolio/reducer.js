@@ -4,7 +4,7 @@ const initialstate = {
             id:'1',text:'Jeep-Official',img:'',class:''
         },
         {
-            id:'2',text:'Alfaromeo',img:'',class:''
+            id:'2',text:'miteesocks',img:'',class:''
         },
         {
             id:'3',text:'marcomoratti',img:'',class:''
@@ -22,7 +22,7 @@ const initialstate = {
             id:'7',text:'Fiat',img:'',class:''
         },
         {
-            id:'8',text:'miteesocks',img:'',class:''
+            id:'8',text:'AlfaRomeo',img:'',class:''
         },
         {
             id:'9',text:'datanet',img:'',class:''
