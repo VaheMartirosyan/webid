@@ -1,5 +1,6 @@
 import React,{Component}from "react";
 import './HomePortfolio.scss'
+import './MediaHomePortfolio.scss'
 import {connect} from 'react-redux';
 
 class HomePortfolio extends Component{
@@ -94,7 +95,7 @@ class HomePortfolio extends Component{
                    <div className={'d-flex flex-wrap '} style={{position:'relative',width:'70%',margin:'0 auto'}}>
                        {this.props.portfolio.map((e,i)=>{
                            return(
-                               <div key={i} className={ `col-lg-4 bod${e.id} ${this.state.all ? `all${e.id}`: this.state.nonGov ? `nongov${e.id}` :
+                               <div key={i} className={ `col-lg-4 col-md-6 bod${e.id} ${this.state.all ? `all${e.id}`: this.state.nonGov ? `nongov${e.id}` :
                                    this.state.tech ? `tech${e.id}`: this.state.telecom ? `tel${e.id}` : this.state.education ? `educate${e.id}` :
                                        this.state.auto_moto ? `auto${e.id}` : this.state.art ? `art${e.id}` : this.state.industrial ? `industrial${e.id}` :
                                            this.state.ecommerce ? `ecom${e.id}` : this.state.news ? `news${e.id}` : this.state.entertaiment ? `enter${e.id}` :  this.state.load ? `bodo${e.id}` : `bod${e.id}`

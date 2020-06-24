@@ -1,5 +1,5 @@
 .portfolio_filter{
- position: absolute;
+  position: absolute;
   transform: rotate(-90deg) translate(-420px,-200px);
   top:0;
   ul{
@@ -20,7 +20,7 @@
   background: mediumpurple;
   text-align: center;
   transition: 1s;
-  background: url("./Img/jeep.png") no-repeat ;
+  background: url("./Img/jeep.webp") no-repeat ;
   background-size: cover;
   background-position-x: right;
 }
@@ -30,7 +30,7 @@
   height: 517px;
   background: hotpink;
   text-align: center;
-  background: url("./Img/naski.png") 100% 100% ;
+  background: url("./Img/naski.webp") no-repeat ;
   background-size: cover;
   background-position-x: right;
 }
@@ -40,7 +40,7 @@
   height: 542px;
   background: rebeccapurple;
   text-align: center;
-  background: url("./Img/Marko.png") 100% 100% ;
+  background: url("./Img/Marko.webp")  no-repeat ;
   background-size: cover;
   background-position-x: right;
 }
@@ -50,7 +50,7 @@
   height: 300px;
   background: red;
   text-align: center;
-  background: url("./Img/goldcrest.png") 100% 100% ;
+  background: url("./Img/goldcrest.webp") no-repeat ;
   background-size: cover;
   background-position-x: left;
 }
@@ -60,7 +60,7 @@
   height: 517px;
   background: purple;
   text-align: center;
-  background: url("./Img/R2E2.png") 100% 100% ;
+  background: url("./Img/R2E2.webp") no-repeat ;
   background-size: cover;
   background-position-x: left;
 }
@@ -70,7 +70,7 @@
   height: 507px;
   background: pink;
   text-align: center;
-  background: url("./Img/allHotels.png") 100% 100% ;
+  background: url("./Img/allHotels.webp") no-repeat;
   background-size: cover;
   background-position-x: right;
 }
@@ -80,7 +80,7 @@
   height: 507px;
   background: yellowgreen;
   text-align: center;
-  background: url("./Img/Fiat.png") 100% 100% ;
+  background: url("./Img/542.webp") no-repeat ;
   background-size: cover;
   background-position-x: right;
 }
@@ -90,7 +90,7 @@
   height: 300px;
   background: deeppink;
   text-align: center;
-  background: url("./Img/AlfaR.png") 100% 100% ;
+  background: url("./Img/AlfaR.webp") no-repeat ;
   background-size: cover;
   background-position-x: left;
 }
@@ -100,7 +100,7 @@
   height: 300px;
   background: rebeccapurple;
   text-align: center;
-  background: url("./Img/Datanet.png") 100% 100% ;
+  background: url("./Img/Datanet.webp") no-repeat;
   background-size: cover;
   background-position-x: right;
 }
@@ -118,6 +118,9 @@
   height: 517px;
   background: hotpink;
   text-align: center;
+  background: url("./Img/VD.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod12{
   border-radius: 10px;
@@ -125,6 +128,9 @@
   height: 542px;
   background: rebeccapurple;
   text-align: center;
+  background: url("./Img/sda.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod13{
   border-radius: 10px;
@@ -132,6 +138,9 @@
   height: 300px;
   background: red;
   text-align: center;
+  //background: url("./Img/Datanet.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod14{
   border-radius: 10px;
@@ -139,6 +148,9 @@
   height: 517px;
   background: purple;
   text-align: center;
+  background: url("./Img/520.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod15{
   border-radius: 10px;
@@ -146,6 +158,9 @@
   height: 507px;
   background: pink;
   text-align: center;
+  background: url("./Img/thermo.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod16{
   border-radius: 10px;
@@ -160,6 +175,9 @@
   height: 300px;
   background: deeppink;
   text-align: center;
+  background: url("./Img/chees.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod18{
   border-radius: 10px;
@@ -167,6 +185,7 @@
   height: 300px;
   background: rebeccapurple;
   text-align: center;
+
 }
 .bod19{
   border-radius: 10px;
@@ -175,6 +194,9 @@
   background: mediumpurple;
   text-align: center;
   transition: 1s;
+  background: url("./Img/levis.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod20{
   border-radius: 10px;
@@ -182,6 +204,9 @@
   height: 517px;
   background: hotpink;
   text-align: center;
+  background: url("./Img/Lada.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod21{
   border-radius: 10px;
@@ -189,6 +214,9 @@
   height: 542px;
   background: rebeccapurple;
   text-align: center;
+  background: url("./Img/shoping.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod22{
   border-radius: 10px;
@@ -196,6 +224,9 @@
   height: 300px;
   background: red;
   text-align: center;
+  background: url("./Img/Goris.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod23{
   border-radius: 10px;
@@ -203,6 +234,9 @@
   height: 517px;
   background: purple;
   text-align: center;
+  background: url("./Img/grand.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .bod24{
   border-radius: 10px;
@@ -224,6 +258,7 @@
   height: 300px;
   background: deeppink;
   text-align: center;
+
 }
 .bod27{
   border-radius: 10px;
@@ -232,6 +267,9 @@
   background: mediumpurple;
   text-align: center;
   transition: 1s;
+  background: url("./Img/garaj.webp") no-repeat;
+  background-size: cover;
+  background-position-x: right;
 }
 .port_all{
   //width:90%;
@@ -1570,12 +1608,10 @@
 			background: #212121;
 			transition: all .5s;
 			z-index: -1;
-
 	}**/
 /**
 	#btn:hover:after{
 			transform: rotateY(90deg);
-
 	}**/
 
 .load_more{
@@ -1622,4 +1658,40 @@
 }
 .port_all{
   padding: 0 0 150px 0;
+}
+@media (max-width: 1700px){
+  .portfolio_filter{
+    position: absolute;
+    transform: rotate(-90deg) translate(-420px,-230px);
+  }
+}
+@media (max-width: 1600px){
+  .portfolio_filter{
+    position: absolute;
+    transform: rotate(-90deg) translate(-420px,-250px);
+  }
+}
+@media (max-width: 1500px){
+  .portfolio_filter{
+    position: absolute;
+    transform: rotate(-90deg) translate(-420px,-260px);
+  }
+}
+@media (max-width: 1500px){
+  .portfolio_filter{
+    position: absolute;
+    transform: rotate(-90deg) translate(-420px,-270px);
+  }
+}
+@media (max-width: 1300px){
+  .portfolio_filter{
+    position: absolute;
+    transform: rotate(-90deg) translate(-420px,-280px);
+  }
+}
+@media (max-width: 1300px){
+  .portfolio_filter{
+    position: absolute;
+    transform: rotate(-90deg) translate(-420px,-290px);
+  }
 }
