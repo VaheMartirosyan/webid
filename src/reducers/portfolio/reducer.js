@@ -13,7 +13,7 @@ const initialstate = {
             id:'4',text:'goldcrest3d',img:'',class:''
         },
         {
-            id:'5',text:'SSpack',img:'',class:''
+            id:'5',text:'R2E2',img:'',class:''
         },
         {
             id:'6',text:'allhotels',img:'',class:''
@@ -46,7 +46,7 @@ const initialstate = {
             id:'15',text:'thermostyle',img:'',class:''
         },
         {
-            id:'16',text:'r2e2',img:'',class:''
+            id:'16',text:'SSpack',img:'',class:''
         },
         {
             id:'17',text:'chees4you',img:'',class:''
@@ -81,7 +81,6 @@ const initialstate = {
         {
             id:'27',text:'garaj',img:'',class:''
         },
-
 
     ],
 

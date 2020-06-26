@@ -19,46 +19,49 @@ class HomePortfolio extends Component{
             ecommerce:false,
             gov:false,
             hospitality:false,
+            activity:false,
             load:false
-
         }
     }
     all = (prop) =>{
         switch (prop) {
 
             case 'all' : this.setState({all:true,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'nongov' :  this.setState({all:false,nonGov:true,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'tech' :  this.setState({all:false,nonGov:false,tech:true,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'telecom' :  this.setState({all:false,nonGov:false,tech:false,telecom:true,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'education' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:true,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'auto_moto' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:true,art:false,industrial:false,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'art' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:true,industrial:false,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'industrial' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:true,ecommerce:false,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'ecommerce' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:true,
-                news:false,entertaiment:false})
+                news:false,hospitality:false,activity:false,})
                 break
             case 'news' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:true,entertaiment:false})
+                news:true,hospitality:false,activity:false,})
                 break
-            // case 'entertaiment' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-            //     news:false,entertaiment:true})
-            //     break
+            case 'hospitality' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+                news:false,hospitality:true,activity:false,})
+                break
+            case 'activity' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+                news:false,hospitality:false,activity:true,})
+                break
         }
     }
     loadMore = () =>{
@@ -80,7 +83,7 @@ class HomePortfolio extends Component{
                        <ul className={'d-flex'}>
                            <li onClick={()=>this.all('all')}>All</li>
                            <li onClick={()=>this.all('nongov')}>Non-Govermental</li>
-                           <li onClick={()=>this.all('tech')}>Tech</li>
+                           <li onClick={()=>this.all('tech')}>High Tech</li>
                            <li onClick={()=>this.all('telecom')}>Telecom</li>
                            <li onClick={()=>this.all('education')}>Education</li>
                            <li onClick={()=>this.all('auto_moto')}>Auto & Moto</li>
@@ -88,17 +91,19 @@ class HomePortfolio extends Component{
                            <li onClick={()=>this.all('industrial')}>Industrial</li>
                            <li onClick={()=>this.all('ecommerce')}>Ecommerce</li>
                            <li onClick={()=>this.all('news')}>Govermental</li>
-                           {/*<li onClick={()=>this.all('entertaiment')}>Entertaiment</li>*/}
+                           <li onClick={()=>this.all('hospitality')}>Hospitality</li>
+                           <li onClick={()=>this.all('activity')}>Activity</li>
 
                        </ul>
                    </div>
                    <div className={'d-flex flex-wrap '} style={{position:'relative',width:'70%',margin:'0 auto'}}>
                        {this.props.portfolio.map((e,i)=>{
                            return(
-                               <div key={i} className={ `col-lg-4 col-md-6 bod${e.id} ${this.state.all ? `all${e.id}`: this.state.nonGov ? `nongov${e.id}` :
+                               <div key={i} className={ `col-lg-4 bod${e.id} ${this.state.all ? `all${e.id}`: this.state.nonGov ? `nongov${e.id}` :
                                    this.state.tech ? `tech${e.id}`: this.state.telecom ? `tel${e.id}` : this.state.education ? `educate${e.id}` :
                                        this.state.auto_moto ? `auto${e.id}` : this.state.art ? `art${e.id}` : this.state.industrial ? `industrial${e.id}` :
-                                           this.state.ecommerce ? `ecom${e.id}` : this.state.news ? `news${e.id}` : this.state.entertaiment ? `enter${e.id}` :  this.state.load ? `bodo${e.id}` : `bod${e.id}`
+                                           this.state.ecommerce ? `ecom${e.id}` : this.state.news ? `news${e.id}` : this.state.hospitality ? `hosp${e.id}` : 
+                                               this.state.activity ? `active${e.id}` :  this.state.load ? `bodo${e.id}` : `bod${e.id}`
                                }`
 
                                }>{e.text}</div>
