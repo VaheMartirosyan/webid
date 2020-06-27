@@ -1,17 +1,10 @@
 import React from "react";
 import './Navbar.scss'
+import './MediaNavbar.scss'
 import logo from './img/WebID.png'
-// import {FacebookShareButton} from 'react-share'
 
 export default ()=>{
-    // const shareUrl = 'http://github.com';
-    // const title = 'GitHub';
-    // <FacebookShareButton
-    //     url={shareUrl}
-    //     quote={title}
-    // // >
-    // share
-    // </FacebookShareButton>
+
     return(
         <div className={'nav_all'} >
             <input type="checkbox" id="myInput"/>

@@ -1358,6 +1358,10 @@
 }
 
 @media screen and (max-width:1900px) {
+  .hosp6{
+    transform: translate(-200%,-542px) scale(1);
+    transition: 1s;
+  }
   .news5{
     transition: 1s;
     transform: translate(-100%, -540px) scale(1);
@@ -1445,6 +1449,10 @@
   }
 }
 @media screen and (max-width:1500px){
+  .hosp6{
+    transform: translate(-200%,-400px) scale(1);
+    transition: 1s;
+  }
   .news5{
     transition: 1s;
     transform: translate(-100%, -400px) scale(1);
@@ -1540,8 +1548,11 @@
     transform:translate(-190%,-1930px) scale(1);
   }
 }
-
 @media screen and (max-width:1230px){
+  .hosp6{
+    transform: translate(-200%,-350px) scale(1);
+    transition: 1s;
+  }
   .news5{
     transition: 1s;
     transform: translate(-100%, -350px) scale(1);
@@ -1635,6 +1646,10 @@
 }
 
 @media screen and (max-width:1130px){
+  .hosp6{
+    transform: translate(-200%,-300px) scale(1);
+    transition: 1s;
+  }
   .ecom3{
     transform:translate(-200%,0) scale(1);
     transition: 1s;
