@@ -116,7 +116,9 @@ class HomePortfolio extends Component{
                                             </div>
                                         </div>
                                         <div className='portfolio_hovered2'>
-                                            <p>{e.category}</p>    
+                                            <div>
+                                                <p>{e.category}</p>
+                                            </div>
                                         </div>
                                     </a>
                                   
