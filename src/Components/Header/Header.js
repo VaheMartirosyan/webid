@@ -25,7 +25,7 @@ export default ()=>{
     return(
         <div className={startScroll}>
             <div className={'logo'}>
-                <a><img src={logo} alt=""/></a>
+                <a href=""><img src={logo} alt=""/></a>
             </div>
             <Navbar/>
         </div>

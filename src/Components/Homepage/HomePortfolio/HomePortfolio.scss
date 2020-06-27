@@ -6,10 +6,14 @@
     list-style: none;
     display: flex;
     flex-direction: row-reverse;
+    .li_active{
+      color: #EA0026;
+    }
     li{
       color:white;
       margin: 0 10px;
       cursor: pointer;
+      
     }
   }
 }
@@ -271,10 +275,55 @@
   background-size: cover;
   background-position-x: right;
 }
-.port_all{
-  //width:90%;
-  //margin:0 auto;
-  //position: relative;
+.main_port{
+position: relative;
+overflow: hidden;
+.port_hovered{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  .portfolio_hovered1{
+    background-color: rgba(234, 0, 38,.4);
+    width: 100%;
+    height: 50%;
+    transform: translate(0,-100%);
+    transition: .5s;
+    div{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .portfolio_hovered2{
+    background-color: rgba(234, 0, 38,.4);
+    width: 100%;
+    height: 50%;
+    transform: translate(0,100%);
+    transition: .5s;
+  }
+}
+&:hover{
+  .port_hovered{
+    .portfolio_hovered1{
+      transform: translate(0,0%);
+      transition: .5s;
+    }
+    .portfolio_hovered2{
+      
+      width: 100%;
+      height: 50%;
+      transform: translate(0,0%);
+      transition: .5s;
+    }
+  }
+}
 }
 .portfolio{
 
@@ -1879,6 +1928,7 @@ transform: translate(930px, -2625px) scale(1);
 }
 .port_all{
   padding: 0 0 150px 0;
+  position: relative;
 }
 @media (max-width: 1700px){
   .portfolio_filter{

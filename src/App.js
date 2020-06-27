@@ -5,6 +5,9 @@ import Footer from "./Components/Footer/Footer";
 
 
 export default class App extends React.Component{
+  componentDidMount(){
+    console.clear()
+  }
   render() {
     return(
         <div>

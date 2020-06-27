@@ -1,85 +1,85 @@
 const initialstate = {
     arr:[
         {
-            id:'1',text:'Jeep-Official',img:'',class:''
+            id:'1',text:'Jeep-Official',img:'jeep',category:'Auto && Moto'
         },
         {
-            id:'2',text:'miteesocks',img:'',class:''
+            id:'2',text:'Miteesocks',img:'naski',category:'Ecommerce'
         },
         {
-            id:'3',text:'marcomoratti',img:'',class:''
+            id:'3',text:'Marcomoratti',img:'Marko',category:'Ecommerce'
         },
         {
-            id:'4',text:'goldcrest3d',img:'',class:''
+            id:'4',text:'Goldcrest',img:'goldcrest',category:'Art'
         },
         {
-            id:'5',text:'R2E2',img:'',class:''
+            id:'5',text:'R2E2',img:'R2E2',category:'Govermental'
         },
         {
-            id:'6',text:'allhotels',img:'',class:''
+            id:'6',text:'Allhotels',img:'allHotels',category:'Hospitality'
         },
         {
-            id:'7',text:'Fiat',img:'',class:''
+            id:'7',text:'Fiat Armenia',img:'542',category:'Auto && Moto'
         },
         {
-            id:'8',text:'AlfaRomeo',img:'',class:''
+            id:'8',text:'Alfa Romeo Armenia',img:'AlfaR',category:'AUto && Moto'
         },
         {
-            id:'9',text:'datanet',img:'',class:''
+            id:'9',text:'Datanet',img:'Datanet',category:'Telecom'
         },
         {
-            id:'10',text:'formward',img:'',class:''
+            id:'10',text:'Forward',img:'',category:'Auto && Moto'
         },
         {
-            id:'11',text:'vd',img:'',class:''
+            id:'11',text:'VD',img:'VD',category:''
         },
         {
-            id:'12',text:'sda',img:'',class:''
+            id:'12',text:'SDA',img:'sda',category:'Non-Govermental'
         },
         {
-            id:'13',text:'finecars',img:'',class:''
+            id:'13',text:'Finecars',img:'',category:'Auto && Moto'
         },
         {
-            id:'14',text:'datacom',img:'',class:''
+            id:'14',text:'Datacom',img:'520',category:'Telecom'
         },
         {
-            id:'15',text:'thermostyle',img:'',class:''
+            id:'15',text:'Thermostyle',img:'thermo',category:'Industrial'
         },
         {
-            id:'16',text:'SSpack',img:'',class:''
+            id:'16',text:'SSpack',img:'',category:'Ecommerce'
         },
         {
-            id:'17',text:'chees4you',img:'',class:''
+            id:'17',text:'Chees4you',img:'chees',category:'Ecommerce'
         },
         {
-            id:'18',text:'prodigi',img:'',class:''
+            id:'18',text:'Prodigi',img:'',category:'Hi Tech'
         },
         {
-            id:'19',text:'levishalice',img:'',class:''
+            id:'19',text:'Levishalice',img:'levis',category:'Ecommerce'
         },
         {
-            id:'20',text:'ladaarmenia',img:'',class:''
+            id:'20',text:'Lada Armenia',img:'Lada',category:'Auto && Moto'
         },
         {
-            id:'21',text:'shoppingian',img:'',class:''
+            id:'21',text:'Shoppingian',img:'shoping',category:'Ecommerce'
         },
         {
-            id:'22',text:'gorisagro',img:'',class:''
+            id:'22',text:'Goris Agrocollege',img:'Goris',category:'Education'
         },
         {
-            id:'23',text:'grandsport',img:'',class:''
+            id:'23',text:'Grandsport',img:'grand',category:'Activity'
         },
         {
-            id:'24',text:'armdict',img:'',class:''
+            id:'24',text:'Armdict',img:'',category:'Education'
         },
         {
-            id:'25',text:'anunner',img:'',class:''
+            id:'25',text:'AnunnerAM',img:'',category:'Education'
         },
         {
-            id:'26',text:'datanet',img:'',class:''
+            id:'26',text:'Datanet',img:'',category:'Telecom'
         },
         {
-            id:'27',text:'garaj',img:'',class:''
+            id:'27',text:'Garaj',img:'garaj',category:'Ecommerce'
         },
 
     ],
