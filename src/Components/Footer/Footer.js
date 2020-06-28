@@ -1,6 +1,5 @@
 import React from "react";
 import './Footer.scss'
-// import pic from '../../../public/video/ezgif.com-video-to-gif (1).gif'
 
 export default ()=>{
     return(
@@ -13,7 +12,8 @@ export default ()=>{
 
                 <div className={'fixCont'}>
                     <div>
-                        <p>                       taque libero molestiae mollitia natus nesciunt nulla omnis pariatur quod repellat saepe similique veritatis.
+                        <p>
+                            taque libero molestiae mollitia natus nesciunt nulla omnis pariatur quod repellat saepe similique veritatis.
                         </p>
                     </div>
                     <div className={'ajg'}>
