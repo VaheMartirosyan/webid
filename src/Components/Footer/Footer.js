@@ -1,5 +1,6 @@
 import React from "react";
 import './Footer.scss'
+import {FacebookShareButton, LinkedinShareButton, TelegramShareButton, WhatsappShareButton} from "react-share";
 
 export default ()=>{
     return(
@@ -11,13 +12,26 @@ export default ()=>{
             <div className={'fixed_footer'} >
 
                 <div className={'fixCont'}>
-                    <div>
-                        <p>
-                            taque libero molestiae mollitia natus nesciunt nulla omnis pariatur quod repellat saepe similique veritatis.
-                        </p>
-                    </div>
-                    <div className={'ajg'}>
-
+                    <div className={'fixedContainerContent'}>
+                        <div>
+                            <p>Logo</p>
+                            <p>address</p>
+                            <p>Telephone</p>
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    <i className="fa fa-facebook-square"></i>
+                                    <i className="fa fa-linkedin"></i>
+                                    <i className="fa fa-instagram"></i>
+                                    <i className="fa fa-whatsapp"></i>
+                                    <i className="fa fa-telegram"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            Services
+                        </div>
                     </div>
                 </div>
             </div>
