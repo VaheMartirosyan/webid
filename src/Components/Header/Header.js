@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from "./Navbar";
 import logo from './img/WebID.png'
 import './Header.scss'
+import { NavLink } from "react-router-dom";
+
 export default ()=>{
     const [scrollPosition, setSrollPosition] = useState(0);
     const [startScroll, setStartScroll] = useState('header_all');
@@ -25,7 +27,7 @@ export default ()=>{
     return(
         <div className={startScroll}>
             <div className={'logo'}>
-                <a href=""><img src={logo} alt=""/></a>
+                <NavLink to={'/'}><img src={logo} alt=""/></NavLink>
             </div>
             <Navbar/>
         </div>

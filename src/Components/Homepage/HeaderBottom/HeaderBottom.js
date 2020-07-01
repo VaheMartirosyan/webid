@@ -114,8 +114,8 @@ export default ()=>{
                             "enable": true,
                             "distance": 150,
                             "color": "#afafaf",
-                            "opacity": 0.4,
-                            "width": .4
+                            "opacity": 0.6,
+                            "width": .1
                         },
                         "move": {
                             "enable": true,
@@ -154,9 +154,9 @@ export default ()=>{
                             },
                             "bubble": {
                                 "distance": 400,
-                                "size": 40,
+                                "size": 0,
                                 "duration": 2,
-                                "opacity": 8,
+                                "opacity":1,
                                 "speed": 3
                             },
                             "repulse": {
@@ -175,14 +175,14 @@ export default ()=>{
                 }}
             />
             <div className={'text_header'}>
-                <h2 className={'big_txt1'}>More of </h2>
-                <h2 className={'big_txt2'}>an agency</h2>
+                <h2 className={'big_txt1'}>Digitizing Your</h2>
+                <h2 className={'big_txt2'}>Business Identity</h2>
                 <h2 className={'small_txt'}>
-                    Lorem ipsum dolor sit amet &nbsp
+                    We do:
                     <span
                         className="txt-rotate"
                         data-period="2000"
-                        data-rotate='[ " nerdy.", " simple.", " pure JS.", " pretty.", " fun!" ]'>
+                        data-rotate='[ " Web Design.", " Application Development.", " Software Engineering."]'>
                     </span>
 
                 </h2>

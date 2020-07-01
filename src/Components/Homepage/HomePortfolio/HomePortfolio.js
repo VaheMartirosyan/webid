@@ -109,7 +109,7 @@ class HomePortfolio extends Component{
                                }`
 
                                }>
-                                    <a className='port_hovered' href=''>     
+                                    <a className='port_hovered' href={e.link} target="_blank">
                                         <div className='portfolio_hovered1'>
                                             <div>
                                                 <p>{e.text}</p>

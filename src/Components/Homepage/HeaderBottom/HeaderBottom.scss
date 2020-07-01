@@ -7,20 +7,20 @@
     position: absolute;
     top: 30%;
     left: 20px;
-    width: 29%;
+    width: 35%;
     mix-blend-mode: screen;
     .big_txt1{
       font-family: 'Kanit', sans-serif;
-      font-size: 110px;
+      font-size: 70px;
       font-weight: bolder;
       color: white;
 
 
     }
     .big_txt2{
-      margin-top: -50px;
+      margin-top: -10px;
       font-family: 'Kanit', sans-serif;
-      font-size: 110px;
+      font-size: 70px;
       font-weight: bolder;
       color: #EA0026;
 
@@ -45,34 +45,70 @@
 @media (max-width: 1560px){
   .header_bottom_all{
     .text_header{
-      width: 40%;
+      width: 45%;
     }
   }
 }
 @media (max-width: 1310px){
   .header_bottom_all{
     .text_header{
-      width: 45%;
+      width: 50%;
     }
   }
 }
 @media (max-width: 1210px){
   .header_bottom_all{
     .text_header{
-      width: 50%;
+      width: 55%;
     }
   }
 }
 @media (max-width: 1110px){
   .header_bottom_all{
     .text_header{
-      width: 55%;
+      width: 60%;
       .big_txt1{
-        font-size: 95px;
+        font-size: 65px;
       }
       .big_txt2{
-        font-size: 95px;
+        font-size: 65px;
       }
     }
   }
+}
+@media screen and (max-width:768px) and (orientation:portrait){
+  .header_bottom_all #tsparticles {
+    height: 60vh;
+  }
+
+  .header_bottom_all{
+    .text_header{
+      width: 70%;
+      .big_txt1{
+        font-size: 30px;
+      }
+      .big_txt2{
+        font-size: 30px;
+      }
+      .small_txt{
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width:340px) and (orientation:portrait) {
+.header_bottom_all{
+  .text_header{
+    width: 70%;
+    .big_txt1{
+      font-size: 25px;
+    }
+    .big_txt2{
+      font-size: 25px;
+    }
+    .small_txt{
+      font-size: 20px;
+    }
+  }
+}
 }
