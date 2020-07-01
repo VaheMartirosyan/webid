@@ -1,6 +1,7 @@
 import React,{Component}from "react";
 import './HomePortfolio.scss'
 import './MediaHomePortfolio.scss'
+import { filterAll } from "../../../reducers/portfolio/action";
 import {connect} from 'react-redux';
 
 class HomePortfolio extends Component{
@@ -27,7 +28,7 @@ class HomePortfolio extends Component{
         switch (prop) {
 
             case 'all' : this.setState({all:true,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+                news:false,hospitality:false,activity:false,}) ;
                 break
             case 'nongov' :  this.setState({all:false,nonGov:true,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
                 news:false,hospitality:false,activity:false,})
@@ -62,9 +63,12 @@ class HomePortfolio extends Component{
             case 'activity' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
                 news:false,hospitality:false,activity:true,})
                 break
-                
-                
+
+
         }
+        // filterAll('hsbgdhyggh')
+        // console.log(this.props.all)
+
     }
     loadMore = () =>{
         this.setState({load:!this.state.load})
@@ -74,9 +78,9 @@ class HomePortfolio extends Component{
         if(!this.state.load){
             window.scrollTo({behavior:'smooth',top:this.toTop.current.offsetTop +200000})
         }
+
     }
     render() {
-        console.log(this.state.mzxncbzbc)
 
         return(
            <div className={'port_all'} ref={this.toTop}>
@@ -137,11 +141,14 @@ class HomePortfolio extends Component{
 }
 
 
-
+// const mapDispatch ={
+//     filterAll:filterAll()
+// }
 
 const mapState=(state)=>{
     return {
-       portfolio:state.reducer.arr
+       portfolio:state.reducer.arr,
+       all:state.reducer.all
     }
 };
 

@@ -10,45 +10,43 @@ import './App.css'
 
 export default class App extends React.Component{
     state={
-        year:''
+        year:'',
     }
-  componentDidMount(){
-    console.clear()
-      this.setState({
-          year:new Date().getFullYear()
-      })
 
-  }
+    componentDidMount() {
+       this.setState({year:new Date().getFullYear()})
+    }
+
   componentDidUpdate(prevProps) {
         if (this.props.location !== prevProps.location) {
             window.scrollTo(0, 0);
         }
-
   }
     // getYear() {
     //
     // }
     render() {
+
     return(
         <div>
-          <header>
-            <Header/>
-          </header>
-          <section>
-            <Route exact path={'/'} component={HomePage}/>
-          </section>
-            <section>
-                <Route path={'/about'} component={About}/>
-            </section>
-            <section>
-                <Route path={'/services'} component={Services}/>
-            </section>
-            <section>
-                <Route path={'/contact'} component={Contact}/>
-            </section>
-          <footer>
-              <Footer copyright={this.state.year}/>
-          </footer>
+              <header>
+                <Header/>
+              </header>
+              <section>
+                <Route exact path={'/'} component={HomePage}/>
+              </section>
+                <section>
+                    <Route path={'/about'} component={About}/>
+                </section>
+                <section>
+                    <Route path={'/services'} component={Services}/>
+                </section>
+                <section>
+                    <Route path={'/contact'} component={Contact}/>
+                </section>
+              <footer>
+                  <Footer copyright={this.state.year}/>
+              </footer>
         </div>
     )
   }
