@@ -100,8 +100,52 @@ const initialstate = {
 
 const reducer = (state = initialstate, action) => {
     if(action.type === 'filterAll') {
-        console.log('asdhgsjhygs')
-       return{...state,all:action.value}
+       return{...state,all:action.value,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+           news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterNonGov"){
+        return{...state,all:false,nonGov:action.value,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterTech"){
+        return{...state,all:false,nonGov:false,tech:action.value,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterTelecom"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:action.value,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterEducation"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:action.value,auto_moto:false,art:false,industrial:false,ecommerce:false,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterAutoMoto"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:action.value,art:false,industrial:false,ecommerce:false,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterArt"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:action.value,industrial:false,ecommerce:false,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterIndustrial"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:action.value,ecommerce:false,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterEcommerce"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:action.value,
+            news:false,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterGov"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+            news:action.value,hospitality:false,activity:false,}
+    }
+    if(action.type === "filterHospitality"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+            news:false,hospitality:action.value,activity:false,}
+    }
+    if(action.type === "filterActivity"){
+        return{...state,all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
+            news:false,hospitality:false,activity:action.value,}
     }
     return initialstate
 }

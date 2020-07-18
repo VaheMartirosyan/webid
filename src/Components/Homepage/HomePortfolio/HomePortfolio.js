@@ -1,7 +1,12 @@
 import React,{Component}from "react";
 import './HomePortfolio.scss'
 import './MediaHomePortfolio.scss'
-import { filterAll } from "../../../reducers/portfolio/action";
+import { filterAll,filterNonGov,filterTech,
+    filterTelecom,filterEducation,filterAutoMoto,
+    filterArt,filterIndustrial,filterEcommerce,
+    filterGov,filterHospitality,filterActivity
+
+} from "../../../reducers/portfolio/action";
 import {connect} from 'react-redux';
 
 class HomePortfolio extends Component{
@@ -9,66 +14,36 @@ class HomePortfolio extends Component{
         super(props);
         this.toTop = React.createRef()
         this.state = {
-            all:true,
-            nonGov:false,
-            tech:false,
-            telecom:false,
-            education:false,
-            auto_moto:false,
-            art:false,
-            industrial:false,
-            ecommerce:false,
-            gov:false,
-            hospitality:false,
-            activity:false,
             load:false
         }
     }
     all = (prop) =>{
         switch (prop) {
-
-            case 'all' : this.setState({all:true,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,}) ;
+            case 'all' : this.props.filterAll(true);
                 break
-            case 'nongov' :  this.setState({all:false,nonGov:true,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+            case 'nongov' :  this.props.filterNonGov(true)
                 break
-            case 'tech' :  this.setState({all:false,nonGov:false,tech:true,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+            case 'tech' : this.props.filterTech(true)
                 break
-            case 'telecom' :  this.setState({all:false,nonGov:false,tech:false,telecom:true,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+            case 'telecom' : this.props.filterTelecom(true)
                 break
-            case 'education' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:true,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+            case 'education' :  this.props.filterEducation(true)
                 break
-            case 'auto_moto' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:true,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+            case 'auto_moto' :  this.props.filterAutoMoto(true)
                 break
-            case 'art' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:true,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+            case 'art' :  this.props.filterArt(true)
                 break
-            case 'industrial' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:true,ecommerce:false,
-                news:false,hospitality:false,activity:false,})
+            case 'industrial' : this.props.filterIndustrial(true)
                 break
-            case 'ecommerce' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:true,
-                news:false,hospitality:false,activity:false,})
+            case 'ecommerce' : this.props.filterEcommerce(true)
                 break
-            case 'news' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:true,hospitality:false,activity:false,})
+            case 'news' : this.props.filterGov(true)
                 break
-            case 'hospitality' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:true,activity:false,})
+            case 'hospitality' :  this.props.filterHospitality(true)
                 break
-            case 'activity' :  this.setState({all:false,nonGov:false,tech:false,telecom:false,education:false,auto_moto:false,art:false,industrial:false,ecommerce:false,
-                news:false,hospitality:false,activity:true,})
+            case 'activity' :  this.props.filterActivity(true)
                 break
-
-
         }
-        // filterAll('hsbgdhyggh')
-        // console.log(this.props.all)
-
     }
     loadMore = () =>{
         this.setState({load:!this.state.load})
@@ -81,35 +56,35 @@ class HomePortfolio extends Component{
 
     }
     render() {
-
+       const allFilters = this.props.allFilters
         return(
            <div className={'port_all'} ref={this.toTop}>
-               <div className={`d-flex ${(this.state.load && this.state.all )? 'portfolio_more': 'portfolio'}`}>
+               <div className={`d-flex ${(this.state.load && allFilters.all )? 'portfolio_more': 'portfolio'}`}>
                    <div className={'portfolio_filter  '}>
                        <ul className={'d-flex'}>
-                           <li className={this.state.all ? 'li_active' : null} onClick={()=>this.all('all')}><a>All</a></li>
-                           <li className={this.state.nonGov ? 'li_active' : null} onClick={()=>this.all('nongov')}>Non-Govermental</li>
-                           <li className={this.state.tech ? 'li_active' : null} onClick={()=>this.all('tech')}>High Tech</li>
-                           <li className={this.state.telecom ? 'li_active' : null} onClick={()=>this.all('telecom')}>Telecom</li>
-                           <li className={this.state.education ? 'li_active' : null} onClick={()=>this.all('education')}>Education</li>
-                           <li className={this.state.auto_moto ? 'li_active' : null} onClick={()=>this.all('auto_moto')}>Auto & Moto</li>
-                           <li className={this.state.art ? 'li_active' : null} onClick={()=>this.all('art')}>Art</li>
-                           <li className={this.state.industrial ? 'li_active' : null} onClick={()=>this.all('industrial')}>Industrial</li>
-                           <li className={this.state.ecommerce ? 'li_active' : null} onClick={()=>this.all('ecommerce')}>Ecommerce</li>
-                           <li className={this.state.news ? 'li_active' : null} onClick={()=>this.all('news')}>Govermental</li>
-                           <li className={this.state.hospitality ? 'li_active' : null} onClick={()=>this.all('hospitality')}>Hospitality</li>
-                           <li className={this.state.activity ? 'li_active' : null} onClick={()=>this.all('activity')}>Activity</li>
+                           <li className={allFilters.all ? 'li_active' : null} onClick={()=>this.all('all')}><a>All</a></li>
+                           <li className={allFilters.nonGov ? 'li_active' : null} onClick={()=>this.all('nongov')}>Non-Govermental</li>
+                           <li className={allFilters.tech ? 'li_active' : null} onClick={()=>this.all('tech')}>High Tech</li>
+                           <li className={allFilters.telecom ? 'li_active' : null} onClick={()=>this.all('telecom')}>Telecom</li>
+                           <li className={allFilters.education ? 'li_active' : null} onClick={()=>this.all('education')}>Education</li>
+                           <li className={allFilters.auto_moto ? 'li_active' : null} onClick={()=>this.all('auto_moto')}>Auto & Moto</li>
+                           <li className={allFilters.art ? 'li_active' : null} onClick={()=>this.all('art')}>Art</li>
+                           <li className={allFilters.industrial ? 'li_active' : null} onClick={()=>this.all('industrial')}>Industrial</li>
+                           <li className={allFilters.ecommerce ? 'li_active' : null} onClick={()=>this.all('ecommerce')}>Ecommerce</li>
+                           <li className={allFilters.news ? 'li_active' : null} onClick={()=>this.all('news')}>Govermental</li>
+                           <li className={allFilters.hospitality ? 'li_active' : null} onClick={()=>this.all('hospitality')}>Hospitality</li>
+                           <li className={allFilters.activity ? 'li_active' : null} onClick={()=>this.all('activity')}>Activity</li>
 
                        </ul>
                    </div>
                    <div className={'d-flex flex-wrap '} style={{position:'relative',width:'70%',margin:'0 auto'}}>
                        {this.props.portfolio.map((e,i)=>{
                            return(
-                               <div key={i} className={ `col-lg-4 col-sm-6 main_port bod${e.id} ${this.state.all ? `all${e.id}`: this.state.nonGov ? `nongov${e.id}` :
-                                   this.state.tech ? `tech${e.id}`: this.state.telecom ? `tel${e.id}` : this.state.education ? `educate${e.id}` :
-                                       this.state.auto_moto ? `auto${e.id}` : this.state.art ? `art${e.id}` : this.state.industrial ? `industrial${e.id}` :
-                                           this.state.ecommerce ? `ecom${e.id}` : this.state.news ? `news${e.id}` : this.state.hospitality ? `hosp${e.id}` : 
-                                               this.state.activity ? `active${e.id}` :  this.state.load ? `bodo${e.id}` : `bod`
+                               <div key={i} className={ `col-lg-4 col-sm-6 main_port bod${e.id} ${allFilters.all ? `all${e.id}`: allFilters.nonGov ? `nongov${e.id}` :
+                                  allFilters.tech ? `tech${e.id}`:allFilters.telecom ? `tel${e.id}` :allFilters.education ? `educate${e.id}` :
+                                      allFilters.auto_moto ? `auto${e.id}` :allFilters.art ? `art${e.id}` :allFilters.industrial ? `industrial${e.id}` :
+                                          allFilters.ecommerce ? `ecom${e.id}` :allFilters.news ? `news${e.id}` :allFilters.hospitality ? `hosp${e.id}` : 
+                                              allFilters.activity ? `active${e.id}` :  this.state.load ? `bodo${e.id}` : `bod`
                                }`
 
                                }>
@@ -141,15 +116,27 @@ class HomePortfolio extends Component{
 }
 
 
-// const mapDispatch ={
-//     filterAll:filterAll()
-// }
+const mapDispatch ={
+    filterAll,
+    filterNonGov,
+    filterTech,
+    filterTelecom,
+    filterEducation,
+    filterAutoMoto,
+    filterArt,
+    filterIndustrial,
+    filterEcommerce,
+    filterGov,
+    filterHospitality,
+    filterActivity
+}
 
 const mapState=(state)=>{
     return {
        portfolio:state.reducer.arr,
-       all:state.reducer.all
+       allFilters:state.reducer,
+
     }
 };
 
-export default connect(mapState)(HomePortfolio);
+export default connect(mapState,mapDispatch)(HomePortfolio);
