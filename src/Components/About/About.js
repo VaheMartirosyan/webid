@@ -1,6 +1,6 @@
 import React from "react";
 import './About.scss'
-import mask from './img/mask.png'
+import mask from './img/meduza.png'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

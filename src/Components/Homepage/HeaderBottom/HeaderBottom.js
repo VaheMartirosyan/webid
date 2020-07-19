@@ -2,7 +2,7 @@ import React from "react";
 import Particles from 'react-particles-js';
 import "./HeaderBottom.scss"
 import Social from "./Social/Social";
-export default ()=>{
+export default ({scroll})=>{
     var TxtRotate = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -188,7 +188,7 @@ export default ()=>{
                 </h2>
             </div>
             <Social/>
-            <div className="mouse_scroll">
+            <div className="mouse_scroll" onClick={scroll} >
 
                 <div className="mouse">
                     <div className="wheel"></div>
