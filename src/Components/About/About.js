@@ -27,6 +27,14 @@ export default class Introducing extends React.Component {
 
             }
         });
+        this.ml = gsap.timeline({
+            paused: true,
+            scrollTrigger: {
+                trigger: this.trigger,
+                scrub: true,
+
+            }
+        });
         this.il = gsap.timeline({
             paused: true,
             scrollTrigger: {
@@ -58,9 +66,10 @@ export default class Introducing extends React.Component {
             duration: 2
         }).to('.down',{color:'#ea0026'},0).to('.down',{color:'#ea0026'},1);
         this.pl.to('.down2', {
-            x:-2000,
+            x:-1500,
             duration: 2
         }).to('.down2',{color:'#ea0026'},0).to('.down',{color:'#ea0026'},1);
+        this.ml.to('.img_2',{width:'40%'},0).to('.down',{width:'100%'},1);
         // this.il.to(".box", {
         //     force3D: true,
         //     duration: 1,
@@ -85,6 +94,10 @@ export default class Introducing extends React.Component {
                 <div className={'boxes'}>
                     <img src={mask} alt=""/>
                 </div>
+                <div className = 'img_2' >
+                    <img  src={mask} alt=""/>
+                </div>
+                
                 <div className={'about_last'}>
                    <span className="down2" >
                     We are a team of young and ambitious talents desire to grow with every new project.

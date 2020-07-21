@@ -10,6 +10,15 @@
 
   }
 }
+.img_2{
+  position: absolute;
+  width: 40%;
+  top:3%;
+  left: -20%;
+  opacity: .2;
+ filter: blur(.7rem);
+  
+}
 //.intro{
 //  width: 50%;
 //  margin: 5vh auto;
@@ -59,7 +68,7 @@
     letter-spacing: 5px;
     text-align: justify;
     &.down2 {
-      bottom:5%;
+      bottom:0%;
       right: 0;
     }}
 
@@ -78,7 +87,7 @@
     letter-spacing: 5px;
     text-align: justify;
     &.down {
-      top:20%;
+      top:15%;
       left: 0;
     }
 
@@ -93,7 +102,7 @@
   img{
     position: absolute;
     right: 5%;
-    top:2%;
+    top:4%;
     z-index: 5;
     width: 40%;
   }
@@ -103,17 +112,19 @@
   img{
     position: absolute;
     left: 5%;
-    bottom:15%;
+    bottom:25%;
     z-index: 5;
     width: 40%;
   }
 }
 .about_last{
   position: absolute;
-  bottom: 20%;
-  color: #b7b7b7;
+  bottom: 25%;
   padding: 0 10vw;
-  right: 0;
+  right: 10%;
   width: 100%;
   transform: translateX(100%);
+  .down2{
+    color:white
+  }
 }
